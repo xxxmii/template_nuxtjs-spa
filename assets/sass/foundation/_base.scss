@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: $base-bg;
+    color: $base-font;
+    font-size: 1.6rem;
+    @include MPlus1p;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: $white;
+    cursor: pointer;
+    transition: all 0.3s;
+    text-decoration: none;
+    word-break: break-all;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+em,
+strong,
+li,
+th,
+td,
+code {
+    &::selection {
+        background: $base;
+        color: $white;
+    }
+}
+
+.inner {
+    position: relative;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@include laptop {
+    .inner {
+        padding: 0 50px;
+    }
+}

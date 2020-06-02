@@ -1,0 +1,30 @@
+/* font-family */
+@mixin MPlus1p {
+    font-family: "M PLUS 1p", sans-serif;
+}
+
+/* media query */
+//PC 1200px〜
+@mixin pc {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+//ラップトップ 769~1119px
+@mixin laptop {
+    @media (max-width: 1119px) {
+        @content;
+    }
+}
+//タブレット　768px
+@mixin tablet {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+//スマホ　〜767px
+@mixin sp {
+    @media (max-width: 767px) {
+        @content;
+    }
+}
