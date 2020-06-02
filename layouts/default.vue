@@ -4,10 +4,26 @@
   </div>
 </template>
 
+<script>
+export default {
+  head() {
+    return {
+      script: [
+        {
+          src:
+            "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+        },
+        { src: "js/common.min.js" }
+      ]
+    };
+  }
+};
+</script>
+
 <style>
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, "Helvetica Neue", Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
