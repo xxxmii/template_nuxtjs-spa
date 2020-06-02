@@ -1,0 +1,17 @@
+.header {
+    padding: 10px 0;
+    background-color: $base;
+
+    &__item {
+        flex-grow: 1;
+        text-align: center;
+
+        &__list {
+            color: $white;
+        }
+    }
+    &__nav {
+        display: flex;
+        justify-content: space-around;
+    }
+}
