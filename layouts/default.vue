@@ -19,14 +19,9 @@ export default {
         {
           src:
             "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-        }
+        },
+        { src: "~/assets/js/common.min.js" }
       ],
-      link: [
-        {
-          rel: 'script',
-          href: 'js/common.js'
-        }
-      ]
     };
   },
   components: {
